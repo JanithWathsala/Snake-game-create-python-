@@ -91,11 +91,11 @@ def snake_move():
     
     if snake.direction == "left":
         x = snake.xcor()
-        snake.sety(x-20)
+        snake.setx(x-20)
     
     if snake.direction == "up":
         x = snake.xcor()
-        snake.sety(x+20)
+        snake.setx(x+20)
         
         
         
@@ -145,7 +145,7 @@ while True:
     snake_move()
     
     #snake & border colision
-    if snake.xcor() > 280 or snake.xcor() < -300 or snake.xcor() > 240 or snake.xor() < -240:
+    if snake.xcor() > 280 or snake.xcor() < -300 or snake.xcor() > 240 or snake.xcor() < -240:
         time.sleep()
         screen.clear()
         screen.bgcolor("turquoise")
